@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.h-auto {
+  height: auto;
+}
+
+.nav-links {
+  @apply flex flex-col h-0 overflow-hidden lg:flex-row lg:items-center lg:h-auto lg:w-full;
+  transition: 0.3s ease-in-out all;
+}
+
+.nav-link {
+  @apply block text-2xl px-0 py-4 text-center capitalize lg:text-base lg:mr-4 lg:p-0 hover:text-green-500 tracking-wider;
+  transition: 0.3s ease-in-out all;
+}
+
+.btn {
+  @apply appearance-none rounded cursor-pointer py-3 px-3 capitalize tracking-wider text-white bg-green-500;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease-in-out all;
+}
+
+.checkout {
+  @apply flex justify-center lg:items-center lg:justify-end lg:mr-0 lg:w-full;
+}
+
+.page {
+  @apply my-0 mx-auto max-w-5xl;
+  width: 90vw;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+.error-page {
+  min-height: calc(100vh - (6rem + 4rem));
+}
